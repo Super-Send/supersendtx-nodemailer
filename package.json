@@ -1,6 +1,6 @@
 {
   "name": "supersendtx-nodemailer",
-  "version": "0.9.0",
+  "version": "0.14.0",
   "description": "Nodemailer transport for SuperSend TX transactional email (HTTP API, not SMTP)",
   "license": "MIT",
   "type": "module",
@@ -14,7 +14,8 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "src"
   ],
   "repository": {
     "type": "git",
@@ -42,16 +43,18 @@
   },
   "peerDependencies": {
     "nodemailer": ">=6.0.0",
-    "supersendtx": ">=0.9.0"
+    "supersendtx": ">=0.13.0"
   },
   "devDependencies": {
-    "supersendtx": "0.9.0",
+    "@types/nodemailer": "^8.0.1",
+    "nodemailer": "^9.0.3",
+    "supersendtx": "0.14.0",
     "tsup": "^8.5.0",
     "typescript": "^5",
     "vitest": "^3.2.4"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --clean",
+    "build": "tsup src/index.ts --format esm --dts --external supersendtx --external nodemailer --clean",
     "test": "vitest run",
     "prepublishOnly": "npm run build"
   }

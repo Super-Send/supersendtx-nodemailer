@@ -2,6 +2,8 @@
 
 **[Nodemailer](https://nodemailer.com) transport for [SuperSend TX](https://supersendtx.com)** — keep `transporter.sendMail(...)` and deliver over the SuperSend TX HTTP API (not SMTP).
 
+This repository is the **source of truth** for the transport implementation. Issues and PRs belong here. The HTTP client lives in [`supersendtx`](https://www.npmjs.com/package/supersendtx).
+
 Works anywhere Nodemailer is accepted: Express apps, Payload, Auth.js email, Strapi, Ghost, workers, and custom stacks.
 
 ## Install
@@ -37,6 +39,8 @@ await transporter.sendMail({
   },
 })
 ```
+
+The same transport is also available as `supersendtx/nodemailer` (re-export).
 
 ## Docs
 
