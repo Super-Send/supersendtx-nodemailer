@@ -1,6 +1,6 @@
 # supersendtx-nodemailer
 
-**[Nodemailer](https://nodemailer.com) transport for [SuperSend TX](https://supersendtx.com)** — keep `transporter.sendMail(...)` and deliver over the SuperSend TX HTTP API (not SMTP).
+**[Nodemailer](https://nodemailer.com) transport for [SuperSend TX](https://ranla.ai)** — keep `transporter.sendMail(...)` and deliver over the SuperSend TX HTTP API (not SMTP).
 
 This repository is the **source of truth** for the transport implementation. Issues and PRs belong here. The HTTP client lives in [`supersendtx`](https://www.npmjs.com/package/supersendtx).
 
@@ -44,7 +44,7 @@ The same transport is also available as `supersendtx/nodemailer` (re-export).
 
 ## Docs
 
-https://docs.supersendtx.com/frameworks/node
+https://docs.ranla.ai/frameworks/node
 
 ## License
 
